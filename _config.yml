@@ -1,0 +1,11 @@
+# Site settings
+title: Josh Vorick
+email: josh.vorick@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  "If you do something you love, you'll never work a day in your life."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  JoshVorick
+
+# Build settings
+markdown: kramdown
