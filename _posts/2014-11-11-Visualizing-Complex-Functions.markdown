@@ -5,6 +5,11 @@ date:   2014-11-11 00:24:56
 categories: project code readme
 ---
 
+Visualizing Complex Functions is a program I've wrote that allows you to interactively view the Mandelbrot Set and the Julia Sets as well as some other
+arbitrary complex functions. The C version has the most features, which are detailed below. The reason I've made a similar program in these couple of
+different languages is to simply practice writing code in each of the languages. The Haskell and Mathematica version are also interactive, but slower and
+less feature-filled than their C counterpart. I'mcurrently working on making the Go version into something more versatile and desirable.
+
 ### Types of functions:
 - **Mandelbrot Set** (z's starting value is determined by the center point of the Julia Set's plot. Moving around the Julia Set will therefore distort the Mandelbrot)
 - **Julia Sets** (c is determined by the center point of the Mandelbrot's graph, so clicking around the Mandelbrot Set will change which Julia Set you are seeing)
@@ -46,7 +51,7 @@ Feedback and pull requests are very welcome!
 To be added:
 ============
 - Draw non-iterative complex functions with multiple, cool color schemes (not just boring rainbows)
-- Do something similar in Go, Java, Python, and Haskell!
+- Do something similar in Go, Java, and Python!
 
 Screenshots / sample output:
 ============================

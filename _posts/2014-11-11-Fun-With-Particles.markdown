@@ -4,9 +4,12 @@ title:  "Fun With Particles"
 date:   2014-11-11 00:45:12
 categories: project code readme
 ---
-This is a game/simulator that I started after having my wisdom teeth pulled. It started out as a bouncy ball simulator with random colors and has developed from there. This is, in my opinion, extremely fun to mess around with. By tinkering with the different variables and switching bewtween particle types (i.e. black hole -> frozen -> spark -> ball) you can make some really fascinating patterns (see video below or screenshots at bottom of readme for a few examples). 
+This is a game/simulator that I started after having my wisdom teeth pulled. It started out as a bouncy ball simulator with random colors and has developed
+from there. This is, in my opinion, extremely fun to mess around with. By tinkering with the different variables and switching bewtween particle types
+(i.e. black hole -> frozen -> spark -> ball) you can make some really fascinating patterns (see video below or screenshots at bottom for a few examples). 
+This was maee using the Allegro5 gaming library, so you'll need to install that if you want to run it.
 
-### [Video demonstrating parts of this program](https://www.youtube.com/watch?v=ij0-msWfhqQ)
+### [Outdated video demonstrating parts of this program](https://www.youtube.com/watch?v=ij0-msWfhqQ)
 
 Features
 ========
