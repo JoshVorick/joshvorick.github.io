@@ -24,7 +24,7 @@ a half before I left for college, I was the head instructor for our YMCA and Par
 I've also has experience working in small teams with other Instructors to manage large classes as well
 as very large teams for testings which were sometimes as large as 150 students and as long as 6 hours.
 
-Last summer I worked as an intern at [PCTEL](https://pctel.com). As the Product Management Intern I
+Last summer I worked as an intern at [PCTEL](https://www.antenna.com). As the Product Management Intern I
 designed and created a Product Concept Form for sales persons to fill out if a customer wanted us to
 sell a new type of antenna. After creating an interactive form using Excel and VBScript, I put together
 a program that would track the success of these products and compare their actual success against the
