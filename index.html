@@ -1,24 +1,30 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+<meta charset="utf-8"/>
+<title>Dante: The Game</title>
 
-  <h1 class="page-heading">Projects</h1>
+<style>
+#game_div {
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+</style>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<script type="text/javascript" src="phaser.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="Player.js"></script>
+<script type="text/javascript" src="Person.js"></script>
+<script type="text/javascript" src="Food.js"></script>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</head>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
--->
-</div>
+<body>
+
+<div id="game_div"> </div>
+
+</body>
+
+</html>
