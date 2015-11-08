@@ -34,6 +34,7 @@ var main_state = {
         game.load.image('person3', 'assets/person3.png');
 
         game.load.image('player', 'assets/Player.png');
+        game.load.image('playerBig', 'assets/playerBig.png');
 
         game.load.image('food1', 'assets/food1.png');
         game.load.image('food2', 'assets/food2.png');
@@ -50,15 +51,15 @@ var main_state = {
         game.load.image('deathBackground', 'assets/deathBackground.png');
         game.load.image('liveBackground', 'assets/liveBackground.png');
         game.load.image('walls1', 'assets/level1Walls.bmp');
-        //game.load.image('walls2', 'assets/level2Walls.bmp');
-        //game.load.image('walls3', 'assets/level3Walls.bmp');
-        //game.load.image('walls4', 'assets/level4Walls.bmp');
-        //game.load.image('walls5', 'assets/level5Walls.bmp');
+        game.load.image('walls2', 'assets/level2Walls.bmp');
+        game.load.image('walls3', 'assets/level3Walls.bmp');
+        game.load.image('walls4', 'assets/level4Walls.bmp');
+        game.load.image('walls5', 'assets/level5Walls.bmp');
         game.load.image('level1bg', 'assets/level1bg.png');
-        //game.load.image('level2bg', 'assets/level2bg.png');
-        //game.load.image('level3bg', 'assets/level3bg.png');
-        //game.load.image('level4bg', 'assets/level4bg.png');
-        //game.load.image('level5bg', 'assets/level5bg.png');
+        game.load.image('level2bg', 'assets/level2bg.png');
+        game.load.image('level3bg', 'assets/level3bg.png');
+        game.load.image('level4bg', 'assets/level4bg.png');
+        game.load.image('level5bg', 'assets/level5bg.png');
     },
 
 
@@ -162,6 +163,7 @@ var main_state = {
                 if(pokemonTextCounter == 0) {
                     clearMap();
                     var bg = game.add.sprite(0,0,'transitionBackground');
+                    var characterIcon = game.add.sprite(770,230,'playerBig');
                     bg.fixedToCamera = true;
                 }
 
@@ -174,9 +176,6 @@ var main_state = {
                 }
 
                 if(keyEnter.isDown && !(pokemonTextCounter < currentPokemonText.length + 1)) {
-                    loadingText = game.add.text(175, 140, "LOADING...", { font: "24px Telugu", fill: "#d43030" });         
-                    loadingText.fixedToCamera = true;
-                    game.update();
                     clearMap();
                     populateMap();
                     gameStatus = "in_game";   
@@ -364,7 +363,6 @@ function populateMap() {
         timer = 50.0;
         labelTimer = game.add.text(20, 40, "Timer: " + timer.toString(), { font: "30px Arial", fill: "#ffffff" }); 
         labelTimer.fixedToCamera = true;
-
         //initialize ALL food in designated spots and assign to an array
         food1 = new Food(2923, 340);
         food1.setImage(game, 'food1');
@@ -399,7 +397,6 @@ function populateMap() {
         labelTimer = game.add.text(20, 40, "Timer: " + timer.toString(), { font: "30px Arial", fill: "#ffffff" }); 
         labelTimer.fixedToCamera = true;
 
-
         food1 = new Food(2923, 340);
         food1.setImage(game, 'food1');
         food2 = new Food(2750, 330);
@@ -424,6 +421,7 @@ function populateMap() {
 
         timer = 35.0;
         labelTimer = game.add.text(20, 40, "Timer: " + timer.toString(), { font: "30px Arial", fill: "#ffffff" }); 
+        labelTimer.fixedToCamera = true;
 
         food1 = new Food(2923, 340);
         food1.setImage(game, 'food1');
@@ -467,7 +465,7 @@ function populateMap() {
 
         timer = 20.0;
         labelTimer = game.add.text(20, 40, "Timer: " + timer.toString(), { font: "30px Arial", fill: "#ffffff" }); 
-
+        labelTimer.fixedToCamera = true;
     } 
 
 }
